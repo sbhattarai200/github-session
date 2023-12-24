@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Session</title>
+    <style>
+        body{
+            display: flex;
+            gap:30px;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        li{
+            font-size: 25px;
+            font-family: cursive;
+        }
+        li:hover{
+            color: #b71d1c;
+            cursor: text;
+            font-weight: 700;
+        }
+        #today{  
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div id="today"></div>
+        </div>
+        <ol type="A">
+            <li>Introduction to Version Control System</li>
+            <li>Introduction to Git: Advantages & Disadvantages</li>
+            <li>How Git works</li>
+            <li> 
+                <a 
+                href="https://gamma.app/docs/Introduction-to-Git-lbc9904vcu153dw?mode=present" 
+                target="_blank">
+                Link to Slide
+                </a>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <img src="./git.jpeg" width="100%" height="300" alt="">
+    </div>
+   
+   <script>
+    let dateElem=document.getElementById('today');
+    if(dateElem){
+        dateElem.innerHTML=new Date().toLocaleString();
+        setInterval(()=>{
+            dateElem.innerHTML=new Date().toLocaleString();
+        },1000)
+    }
+   
+   </script>
+</body>
+</html>
