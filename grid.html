@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+            gap: 10px;
+        }
+        div{
+            border: 1px solid #b71d1c;
+            padding:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* @media screen and (max-width: 1200px) {
+            body{
+             grid-template-columns: repeat(2,1fr);
+            }
+            
+        }
+        @media screen and (max-width: 600px) {
+            body{
+             grid-template-columns: repeat(1,1fr);
+            }
+        } */
+        *{
+            border-radius: 10px;
+        }
+        div{
+            background: #b71d1c50;
+        }
+        div:hover{
+            transform: rotate(5deg);
+            border-radius: 50%;
+            box-shadow: 8px 10px #2ad66f;
+        }
+        div:first-child {
+            background: rgb(215, 15, 15);
+        }
+        div:nth-child(-n+9):not(#no) {
+            background: rgb(26, 1, 1);
+        }
+        #time{
+            font-size: 25px;
+            text-shadow: 1px 2px #2ad66f;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div id="no">3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur est modi quae, quod quia ipsa expedita ipsam fugit reiciendis minus atque, quidem eius, velit odio rem dignissimos unde harum omnis?
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div>3</div>
+    <div id="time">3</div>
+    <script>
+        document.body.style.flexDirection="column-reverse"
+        setInterval(()=>{
+            document.querySelector("#time").innerText=new Date().toLocaleString();
+        },1)
+    </script>
+</body>
+</html>
